@@ -1,19 +1,26 @@
 import React from "react";
 
-import DayListItem from "components/DayListItem";
+import InterviewerListItem from "components/InterviewerListItem";
 
-export default function DayList(props) {
-  const { interviewers } = props;
-  const listItems = interviewers.map((interviewer) =>
-    <DayListItem
-      key={interviewer.id}
-      name={interviewer.name}
-      avatar={interviewer.avatar}
+import "components/InterviewerList.scss";
+
+export default function InterviewerList(props) {
+  const { interviewers, interviewer ,setInterviewer } = props;
+  const listItems = interviewers.map((person) =>
+    <InterviewerListItem
+      key={person.id}
+      name={person.name}
+      avatar={person.avatar}
+      selected={interviewer === person.id}
+      setInterviewer={setInterviewer}
     />
   );
   return (
-    <ul>
-      {listItems}
-    </ul>
+    <section className="interviewers">
+      <h4 className="interviewers__header text--light">Interviewer</h4>
+      <ul className="interviewers__list">
+        {listItems}
+      </ul>
+    </section>
   );
 }
