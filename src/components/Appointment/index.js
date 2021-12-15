@@ -4,6 +4,7 @@ import useVisualMode from "hooks/useVisualMode";
 import Header from "./Header";
 import Show from "./Show";
 import Empty from "./Empty";
+import Form from "./Form";
 
 import "./styles.scss";
 
@@ -24,6 +25,9 @@ export default function Appointment(props) {
           student={props.interview.student}
           interviewer={props.interview.interviewer}
         />
+      )}
+      {mode === CREATE && (
+        <Form interviewers={props.interviewers} onCancel={() => back()} />
       )}
     </article>
   );
