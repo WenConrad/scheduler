@@ -8,7 +8,7 @@ Interview Scheduler project made during week 7-8 in the 12 week web developer bo
 
 !["Scheduling New Appointment](https://raw.githubusercontent.com/WenConrad/scheduler/master/docs/Screenshot%20from%202021-12-22%2006-47-18.png)
 
-!["Filling out Appointment Form"](https://raw.githubusercontent.com/WenConrad/scheduler/master/docs/Screenshot%20from%202021-12-22%2006-47-18.png)
+!["Filling out Appointment Form"](https://raw.githubusercontent.com/WenConrad/scheduler/master/docs/Screenshot%20from%202021-12-22%2006-56-06.png)
 
 ## Setup
 
